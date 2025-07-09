@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify your email address</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="otp-container">
+    <section class="otp-box" aria-labelledby="otp-title">
+      <header>
+        <h1 id="otp-title">Verify your email address</h1>
+      </header>
+      <p class="otp-desc">A four-digit code has been sent to your email <span class="otp-email">someone@usermail.com</span>.<br>
+        Please enter the code below to verify your email address.</p>
+      <form id="otp-form" autocomplete="off" aria-label="OTP Verification">
+        <fieldset class="otp-inputs" aria-label="Enter 4 digit OTP">
+          <legend class="visually-hidden">OTP Digits</legend>
+          <input type="text" inputmode="numeric" maxlength="1" class="otp-input" aria-label="Digit 1" required>
+          <input type="text" inputmode="numeric" maxlength="1" class="otp-input" aria-label="Digit 2" required>
+          <input type="text" inputmode="numeric" maxlength="1" class="otp-input" aria-label="Digit 3" required>
+          <input type="text" inputmode="numeric" maxlength="1" class="otp-input" aria-label="Digit 4" required>
+        </fieldset>
+        <button type="submit" class="otp-submit">Verify OTP</button>
+        <div id="otp-message" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 

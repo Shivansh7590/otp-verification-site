@@ -1,0 +1,125 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: #292f45;
+  color: #cfd2e3;
+  font-family: 'New York', 'Apple New York', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.otp-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.otp-box {
+  background: #292f45;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  padding: 40px 32px 32px 32px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+.otp-box header h1 {
+  color: #e0e3f1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.otp-desc {
+  color: #b0b3c7;
+  font-size: 1rem;
+  margin-bottom: 32px;
+}
+.otp-email {
+  color: #e0e3f1;
+  font-weight: 500;
+}
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 32px;
+  border: none;
+  padding: 0;
+}
+.otp-input {
+  width: 90px;
+  height: 120px;
+  background: #23283a;
+  border: 3px solid #23283a;
+  border-radius: 12px;
+  color: #b0b3c7;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
+  outline: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  margin: 0;
+  caret-color: #e0e3f1;
+}
+.otp-input:focus {
+  border-color: #6c63ff;
+  color: #e0e3f1;
+}
+.otp-input.valid {
+  border-color: #3ecf8e;
+}
+.otp-input.invalid {
+  border-color: #ff4d6d;
+}
+.otp-submit {
+  width: 100%;
+  padding: 14px 0;
+  background: #23283a;
+  color: #e0e3f1;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+.otp-submit:hover, .otp-submit:focus {
+  background: #6c63ff;
+  color: #fff;
+}
+#otp-message {
+  margin-top: 18px;
+  font-size: 1.1rem;
+  min-height: 24px;
+}
+@media (max-width: 600px) {
+  .otp-box {
+    padding: 24px 8px 16px 8px;
+    max-width: 98vw;
+  }
+  .otp-input {
+    width: 50px;
+    height: 70px;
+    font-size: 2rem;
+  }
+  .otp-inputs {
+    gap: 10px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+} 
